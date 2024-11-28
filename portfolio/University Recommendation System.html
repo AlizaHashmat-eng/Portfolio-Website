@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Recommendation System - Grad.io</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Final Year Project: Grad.io – University Recommendation System</h1>
+
+        <section class="project-description">
+            <h2>Project Description</h2>
+            <p>Grad.io is an innovative university recommendation system designed to align students’ academic paths with
+                their unique personalities, interests, and career aspirations. The system assesses user personalities
+                through the RIASEC personality test & user’s text-based input for their interests. Utilizing a
+                comprehensive dataset gathered from various university websites via web scraping, Grad.io provides
+                tailored recommendations for academic programs according to their academic grades.</p>
+        </section>
+
+        <section class="key-responsibilities">
+            <h2>Key Responsibilities</h2>
+            <ul>
+                <li><strong>Team Leadership:</strong> Led a team of 4 in developing Grad.io, a platform that assists
+                    students in selecting universities and degree programs based on their grades, preferences, and
+                    interests.</li>
+                <li><strong>Backend Development:</strong> Designed and developed Backend APIs, incorporating RESTful
+                    architecture, to process & handle the scrapped data of universities, user’s academic grades, RIASEC
+                    Personality assessment results & user interests.</li>
+                <li><strong>Personality Assessment Implementation:</strong> Implemented the RIASEC model for personality
+                    assessment, using Cosine similarity & Sentence Transformer to match students’ interests and
+                    personalities with suitable university programs.</li>
+                <li><strong>Natural Language Processing:</strong> Utilized NLP libraries along with Porter Stemmer and
+                    word lemmatization for preprocessing user interests.</li>
+                <li><strong>Security:</strong> Implemented authentication and tokenization to ensure secure access to
+                    the system.</li>
+                <li><strong>Model Optimization:</strong> Optimized the model to increase the accuracy of university
+                    program recommendations by 30%.</li>
+                <li><strong>Web Scraping:</strong> Implemented web scraping using Selenium to gather data from around
+                    200 leading universities in Pakistan. Ensured the data was up-to-date and accurate for reliable
+                    recommendations.</li>
+            </ul>
+        </section>
+
+        <section class="technologies-used">
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Frontend:</strong> React.js</li>
+                <li><strong>Backend:</strong> Node.js</li>
+                <li><strong>Database:</strong> MySQL</li>
+                <li><strong>Web Scraping:</strong> Beautiful Soup, Selenium</li>
+                <li><strong>Model Training:</strong> Flask, NLTK, scikit-learn</li>
+                <li><strong>Deployment:</strong> Heroku & Digital Ocean</li>
+            </ul>
+        </section>
+
+        <section class="challenges-faced">
+            <h2>Challenges Faced</h2>
+            <ul>
+                <li>Ensuring accurate and up-to-date data collection from university websites.</li>
+                <li>Balancing multiple factors such as academic records, personality traits, and interests to provide
+                    reliable and relevant recommendations.</li>
+                <li>Designing an intuitive and user-friendly interface for diverse user inputs.</li>
+            </ul>
+        </section>
+
+        <section class="results-achieved">
+            <h2>Results Achieved</h2>
+            <p>Successfully developed a fully functional university recommendation system that provides personalized
+                university recommendations based on academic records, personality traits, and interests. Received
+                positive feedback from users for the system’s accuracy and relevance in university recommendations.</p>
+        </section>
+
+        <section class="key-features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>User registration and authentication</li>
+                <li>Academic input and preferences</li>
+                <li>RIASEC personality tests and personalized recommendations</li>
+                <li>User’s text-based input for Interests</li>
+                <li>Scrapped data from 200 universities in Pakistan</li>
+                <li>User-friendly interface and responsive design</li>
+                <li>Algorithms for accurate recommendations</li>
+            </ul>
+        </section>
+
+        <section class="conclusion-future-work">
+            <h2>Conclusion and Future Work</h2>
+            <p>Grad.io aims to simplify the decision-making process for students, helping them identify the best
+                educational opportunities that align with their individual profiles and goals. Future work includes
+                expanding the dataset to include more universities, enhancing the recommendation algorithms, and
+                incorporating more advanced AI and ML techniques for even more accurate recommendations.</p>
+        </section>
+
+        <section class="screenshots">
+            <h2>Screenshots/Demo</h2>
+            <!-- Add screenshots or a link to the demo here -->
+            <div class="slideshow-container">
+                <img src="../images/0.png" alt="Screenshot 1" class="slideshow-image active">
+                <img src="../images/0.1.png" alt="Screenshot 2" class="slideshow-image">
+                <img src="../images/1.png" alt="Screenshot 3" class="slideshow-image">
+                <img src="../images/2.png" alt="Screenshot 4" class="slideshow-image">
+                <img src="../images/3.png" alt="Screenshot 5" class="slideshow-image">
+            </div>
+
+        </section>
+
+    </div>
+    <script>
+      // JavaScript for basic slideshow functionality
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slideshow-image');
+const slideInterval = 3000; // Time in milliseconds (3 seconds)
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+    currentIndex = index;
+}
+
+function showNextSlide() {
+    const nextIndex = (currentIndex + 1) % slides.length;
+    showSlide(nextIndex);
+}
+
+// Set interval for automatic slide change
+setInterval(showNextSlide, slideInterval);
+
+    </script>
+</body>
+
+</html>

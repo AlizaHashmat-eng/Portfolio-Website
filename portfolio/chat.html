@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple ChatBot Application</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple ChatBot Application</h1>
+
+        <section class="project-description">
+            <h2>Project Description</h2>
+            <p>The Simple ChatBot Application is a lightweight and flexible platform designed to simulate basic 
+                human-to-machine interactions. Developed with a combination of modern front-end and back-end 
+                technologies, this project serves as an example of how to integrate chatbot functionality into web 
+                applications. The source code is easy to understand and customize, making it an excellent tool for 
+                learning and extending features.</p>
+        </section>
+
+        <section class="technologies-used">
+            <h2>Technologies Used</h2>
+            <div class="technology-lists">
+                <div>
+                    <h3>Front-End</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Ajax</li>
+                        <li>Bootstrap</li>
+                        <li>AdminLTE Template</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Back-End</h3>
+                    <ul>
+                        <li>PHP (version 8.0.2)</li>
+                        <li>MySQL Database</li>
+                        <li>MySQLi OOP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Public Features:</strong>
+                    <ul>
+                        <li>Chatbot Conversations: Engage with a simple and interactive chatbot interface.</li>
+                    </ul>
+                </li>
+                <li><strong>Admin Panel:</strong>
+                    <ul>
+                        <li>Home: View system summary and statistics.</li>
+                        <li>Manage System Settings: Configure chatbot behaviors and appearance.</li>
+                        <li>Manage Responses: Add, edit, or remove chatbot responses for specific queries.</li>
+                        <li>Manage Unanswered Queries: Review and address queries the chatbot could not resolve.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="learning-outcome">
+            <h2>Learning Outcomes</h2>
+            <p>This project demonstrates how to create a Simple ChatBot that can be seamlessly added as a feature 
+                to other projects. The implementation showcases modern development practices, and its source code is 
+                designed to be easy to understand, adapt, and expand for diverse applications.</p>
+        </section>
+
+        <section class="screenshots">
+            <h2>Screenshots/Demo</h2>
+            <div class="slideshow-container">
+                <img src="../images/8.png" alt="ChatBot Screenshot 1" class="slideshow-image active">
+                <img src="../images/9.png" alt="ChatBot Screenshot 2" class="slideshow-image">
+                <img src="../images/10.png" alt="ChatBot Screenshot 3" class="slideshow-image">
+                <img src="../images/11.png" alt="ChatBot Screenshot 3" class="slideshow-image">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript for slideshow functionality
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slideshow-image');
+        const slideInterval = 3000;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            currentIndex = index;
+        }
+
+        function showNextSlide() {
+            const nextIndex = (currentIndex + 1) % slides.length;
+            showSlide(nextIndex);
+        }
+
+        setInterval(showNextSlide, slideInterval);
+    </script>
+</body>
+
+</html>

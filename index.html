@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aliza's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/39ad793436.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo..png" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>
+                    Hi, I am <span>Aliza </span><br />Hashmat, a passionate<br />Developer
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- About ----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        A recent Software Engineering graduate awarded a 100% merit
+                        scholarship for academic excellence, I specialize in Python, AI,
+                        and data analysis, with additional certification in WordPress from
+                        the National Freelance Training Program in Islamabad. Skilled in
+                        Django, React, Node.js, and database management, I have experience
+                        building scalable applications and RESTful APIs. Known for my
+                        analytical mindset and problem-solving abilities, I am eager to
+                        contribute to innovative, collaborative environments.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Development</span><br />Designing responsive web
+                                applications using HTML, CSS, JavaScript and Reactjs
+                            </li>
+                            <li>
+                                <span>Backend Development</span><br />Building scalable
+                                server-side applications with Python and Django
+                            </li>
+                            <li>
+                                <span>Content Writing</span><br />Crafting clear, engaging
+                                content for technical and non-technical audiences
+                            </li>
+                            <li>
+                                <span>AI and Machine Learning</span><br />Applying AI
+                                techniques for predictive analytics and automation
+                            </li>
+                            <li>
+                                <span>WordPress</span><br />Certified in WordPress, creating
+                                and managing websites with user-friendly designs
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Web Developer at RS Softwire · Full-time</span><br />Jun 2023 - Aug
+                                2023<br />Developed responsive websites and optimized front-end performance.
+                            </li>
+                            <li>
+                                <span>Web Developer at RS Softwire · Full-time</span><br />Mar 2023 - Sep
+                                2024<br />Built and maintained websites using Python/Django and React.js etc.
+                            </li>
+                            <li>
+                                <span>Freelancer at Fiverr</span><br />2022 - ongoing<br />Provided web development and
+                                optimization services for clients.
+                            </li>
+                            <li>
+                                <span>Freelancer at Freelancer.com</span><br />2024 - ongoing<br />Delivered custom web
+                                development projects with focus on quality.
+                            </li>
+                            <li>
+                                <span>Content Writer (Freelance)</span><br />2021 - ongoing<br />Created engaging
+                                content on tech topics like AI and data analysis.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Bachelor of Science in Software Engineering</span><br />2020 - 2024<br />Graduated
+                                from Usman Institute of Technology University (UIT)
+                            <li>
+                                <span>Pre-Engineering</span><br />2018 - 2020<br />Completed intermediate from TCF
+                                College, Qayyumabad
+                            </li>
+                            <li>
+                                <span>Matriculation</span><br />2016 - 2018<br />Graduated from The Citizens Foundation
+                                (TCF)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- services ----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Web Development</h2>
+                    <p>
+                        Building robust and scalable web applications using modern frameworks like Django, React.js, and
+                        Node.js, ensuring responsive and optimized performance.
+                    </p>
+                    <a href="services.html/fullstack.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file"></i>
+                    <h2>Technical Writing</h2>
+                    <p>
+                        Creating clear, engaging content and technical documents on software development and data
+                        analysis, tailored for blogs, websites, and online publications.
+                    </p>
+                    <a href="services.html/TW.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>WordPress Development</h2>
+                    <p>
+                        Developing and customizing WordPress sites focused on responsive design, SEO, and seamless user
+                        experience, ideal for small businesses and content creators.
+                    </p>
+                    <a href="services.html/WP.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Analysis & Visualization</h2>
+                    <p>
+                        Turning complex data into actionable insights with tools like Python and SQL, helping businesses
+                        make data-driven decisions and strategies.
+                    </p>
+                    <a href="services.html/DV.html">Learn more</a>
+                </div>
+                <!-- UI/UX Design -->
+                <div>
+                    <i class="fa-solid fa-pencil-ruler"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        Crafting intuitive and visually engaging user interfaces with tools like Figma and Canva,
+                        focusing on user-centered design principles and enhancing the user journey.
+                    </p>
+                    <a href="services.html/UI UX.html">Learn more</a>
+                </div>
+                <!-- Graphic Design -->
+                <div>
+                    <i class="fa-solid fa-paint-brush"></i>
+                    <h2>Graphic Design</h2>
+                    <p>
+                        Delivering creative visuals and branding materials using Adobe Photoshop and Illustrator,
+                        tailored to capture brand identity and appeal to target audiences.
+                    </p>
+                    <a href="services.html/GD.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- ----------- Portfolio Section ----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <!-- First Project -->
+            <div class="work">
+                <img src="images/work-1.png" alt="University Recommendation System" />
+                <div class="layer">
+                    <h3>University Recommendation System</h3>
+                    <p>A platform guiding students to ideal universities based on their grades, interests, and personalities.</p>
+                    <a href="portfolio/University Recommendation System.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Second Project -->
+            <div class="work">
+                <img src="images/work-2.png" alt="Tourism Management System" />
+                <div class="layer">
+                    <h3>Tourism Management System</h3>
+                    <p>A PHP-based system for managing tours, bookings, and user inquiries with robust admin controls.</p>
+                    <a href="portfolio/Tourism Management System (TMS).html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Third Project -->
+            <div class="work">
+                <img src="images/work-3.png" alt="Simple ChatBot Application" />
+                <div class="layer">
+                    <h3>Simple ChatBot Application</h3>
+                    <p>A user-friendly chatbot application demonstrating AI-powered conversational capabilities and admin control.</p>
+                    <a href="portfolio/chat.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------- Contact ----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>
+                    <i class="fa-solid fa-paper-plane"></i>aliza.1801014@gmail.com
+                </p>
+                <p><i class="fa-solid fa-phone-volume"></i>03142955404</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook" alt="Facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/aliza-hashmat/" target="_blank" title="Connect with me on LinkedIn">
+                        <i class="fa-brands fa-linkedin" alt="LinkedIn"></i>
+                    </a>
+                    <a href=""><i class="fa-brands fa-twitter-square" alt="Twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram" alt="Instagram"></i></a>
+                </div>
+                <a href="images/Aliza.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required />
+                    <input type="email" name="Email" placeholder="Your Email" required />
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            © 2024 Aliza Hashmat. All rights reserved.
+        </p>
+    </div>
+</div>
+
+                <script>
+                    var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+
+                    function opentab(tabname) {
+                        for (tablink of tablinks) {
+                            tablink.classList.remove("active-link");
+                        }
+                        for (tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                </script>
+
+                <script>
+                    var sidemenu = document.getElementById("sidemenu");
+
+                    function openmenu() {
+                        sidemenu.style.right = "0";
+                    }
+                    function closemenu() {
+                        sidemenu.style.right = "-200px";
+                    }
+                </script>
+                <script>
+                    const scriptURL =
+                        "https://script.google.com/macros/s/AKfycbzVjyOBtm8dKPf5O1A7me3hQ60KrkbXs0EZadu_99j1GrdTaF12e2KffqAm7X7_Q1_c/exec";
+                    const form = document.forms["submit-to-google-sheet"];
+
+                    const msg = document.getElementById("msg");
+
+                    form.addEventListener("submit", (e) => {
+                        e.preventDefault();
+                        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                            .then((response) => {
+                                msg.innerHTML = "Message sent successfully";
+                                setTimeout(function () {
+                                    msg.innerHTML = "";
+                                }, 5000);
+                                form.reset();
+                            })
+                            .catch((error) => console.error("Error!", error.message));
+                    });
+                </script>
+</body>
+
+</html>

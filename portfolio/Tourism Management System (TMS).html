@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Management System - TMS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Tourism Management System - TMS</h1>
+
+        <section class="project-description">
+            <h2>Project Description</h2>
+            <p>The Tourism Management System (TMS) is a comprehensive platform designed to facilitate seamless tour 
+                management for users and administrators. Built using PHP and MySQL, it provides a user-friendly 
+                interface for managing tour packages, bookings, and user inquiries. The system ensures efficient 
+                functionality for users, guest users, and administrators alike.</p>
+        </section>
+
+        <section class="key-responsibilities">
+            <h2>Key Responsibilities</h2>
+            <ul>
+                <li><strong>System Design:</strong> Architected the database and module structure to support dynamic 
+                    tour management functionalities.</li>
+                <li><strong>Backend Development:</strong> Built the core functionalities using PHP and MySQL for 
+                    robust data handling.</li>
+                <li><strong>User Management:</strong> Implemented secure login, registration, and password recovery 
+                    features.</li>
+                <li><strong>Admin Dashboard:</strong> Developed an intuitive dashboard for managing packages, 
+                    bookings, inquiries, and issues.</li>
+                <li><strong>Frontend Development:</strong> Designed responsive UI elements using HTML, CSS, 
+                    JavaScript, and AJAX for seamless interactions.</li>
+            </ul>
+        </section>
+
+        <section class="technologies-used">
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Languages:</strong> PHP5.6, PHP7.x</li>
+                <li><strong>Database:</strong> MySQL 5.x</li>
+                <li><strong>User Interface:</strong> HTML, AJAX, jQuery, JavaScript</li>
+                <li><strong>Browsers Supported:</strong> Mozilla, Google Chrome, IE8, Opera</li>
+                <li><strong>Development Tools:</strong> XAMPP, Wamp, Mamp, or Lamp</li>
+            </ul>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>For Users:</strong>
+                    <ul>
+                        <li>Register, login, and manage account settings.</li>
+                        <li>Book tours and manage bookings.</li>
+                        <li>Generate tickets for complaints and recover passwords.</li>
+                    </ul>
+                </li>
+                <li><strong>For Admin:</strong>
+                    <ul>
+                        <li>Create, update, and manage tour packages.</li>
+                        <li>Handle user inquiries and complaints.</li>
+                        <li>Monitor bookings and manage system pages.</li>
+                    </ul>
+                </li>
+                <li><strong>Guest Users:</strong> Access basic information about available packages.</li>
+            </ul>
+        </section>
+
+        <section class="challenges-faced">
+            <h2>Challenges Faced</h2>
+            <ul>
+                <li>Ensuring secure user authentication and data management.</li>
+                <li>Creating a responsive and intuitive user interface for diverse user needs.</li>
+                <li>Handling real-time data updates for bookings and inquiries.</li>
+            </ul>
+        </section>
+
+        <section class="results-achieved">
+            <h2>Results Achieved</h2>
+            <p>The Tourism Management System successfully streamlined tour booking and management processes for users 
+                and administrators. It received positive feedback for its efficiency and ease of use, making it a 
+                valuable tool for tourism agencies.</p>
+        </section>
+
+        <section class="conclusion-future-work">
+            <h2>Conclusion and Future Work</h2>
+            <p>The TMS project is a step toward digitizing tourism management. Future enhancements include integrating 
+                advanced analytics for user preferences, adding real-time payment gateways, and incorporating AI-based 
+                tour recommendations.</p>
+        </section>
+
+        <section class="screenshots">
+            <h2>Screenshots/Demo</h2>
+            <div class="slideshow-container">
+                <img src="../images/4.png" alt="TMS Screenshot 1" class="slideshow-image active">
+                <img src="../images/5.png" alt="TMS Screenshot 2" class="slideshow-image">
+                <img src="../images/6.png" alt="TMS Screenshot 3" class="slideshow-image">
+                <img src="../images/7.png" alt="TMS Screenshot 4" class="slideshow-image">
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // JavaScript for basic slideshow functionality
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slideshow-image');
+        const slideInterval = 3000; // Time in milliseconds (3 seconds)
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            currentIndex = index;
+        }
+
+        function showNextSlide() {
+            const nextIndex = (currentIndex + 1) % slides.length;
+            showSlide(nextIndex);
+        }
+
+        // Set interval for automatic slide change
+        setInterval(showNextSlide, slideInterval);
+    </script>
+
+</body>
+
+</html>
